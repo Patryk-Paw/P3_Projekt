@@ -24,7 +24,7 @@ List<PowerSupplyEntity> powerSupplies = JsonSerializer.Deserialize<List<PowerSup
 
 foreach (var powerSupply in powerSupplies)
 {
-    Console.WriteLine($"Power Supply: {powerSupply.PowerName}, Wattage: {powerSupply.PowerValue}");
+    Console.WriteLine($"Power Supply: {powerSupply.PowerName}, Wattage: {powerSupply.PowerValue}, Price: {powerSupply.ItemCost}");
 }
 
 // Disk
@@ -35,7 +35,8 @@ List<DiskEntity> diskEntities = JsonSerializer.Deserialize<List<DiskEntity>>(Djs
 
 foreach (var disk in diskEntities)
 {
-    Console.WriteLine($"Disk: {disk.DiskName}, Capacity: {disk.DiskCapacity}GB, Read Speed: {disk.DiskReading}MB/s, Write Speed: {disk.DiskWrite}MB/s");
+    Console.WriteLine($"Disk: {disk.DiskName}, Capacity: {disk.DiskCapacity}GB, Read Speed: {disk.DiskReading}MB/s," +
+        $" Write Speed: {disk.DiskWrite}MB/s, Price: {disk.ItemCost}");
 }
 
 // Motherboard
@@ -46,7 +47,8 @@ List<MotherboardEntity> motherboardEntities = JsonSerializer.Deserialize<List<Mo
 
 foreach (var motherboard in motherboardEntities)
 {
-    Console.WriteLine($"Motherboard: {motherboard.MotherboardName}, Chipset: {motherboard.MotherboardChipset}, RAM Type: {motherboard.RamType}, Max RAM: {motherboard.MaxRamCapacity}GB");
+    Console.WriteLine($"Motherboard: {motherboard.MotherboardName}, Chipset: {motherboard.MotherboardChipset}, " +
+        $"RAM Type: {motherboard.RamType}, Max RAM: {motherboard.MaxRamCapacity}GB, Price: {motherboard.ItemCost}");
 }
 
 // Ram 
@@ -57,7 +59,8 @@ List<RamEntity> ramEntities = JsonSerializer.Deserialize<List<RamEntity>>(Rjson,
 
 foreach (var ram in ramEntities)
 {
-    Console.WriteLine($"RAM: {ram.RamName}, Capacity: {ram.RamCapacity}GB, Frequency: {ram.RamFrequency}MHz, Modules: {ram.ModulesNumber}");
+    Console.WriteLine($"RAM: {ram.RamName}, Capacity: {ram.RamCapacity}GB, Frequency: " +
+        $"{ram.RamFrequency}MHz, Modules: {ram.ModulesNumber}, Price: {ram.ItemCost}");
 }
 
 // Graphics Card
@@ -68,7 +71,8 @@ List<GraphicsCardEntity> graphicsCardEntities = JsonSerializer.Deserialize<List<
 
 foreach (var gpu in graphicsCardEntities)
 {
-    Console.WriteLine($"GPU: {gpu.GraphicsName}, VRAM: {gpu.GraphicsRam}GB, Core Frequency: {gpu.GraphicsCoreFrequency}MHz, Power: {gpu.RecommendedGraphicsPower}W");
+    Console.WriteLine($"GPU: {gpu.GraphicsName}, VRAM: {gpu.GraphicsRam}GB, Core Frequency: {gpu.GraphicsCoreFrequency}MHz," +
+        $" Power: {gpu.RecommendedGraphicsPower}W, Price: {gpu.ItemCost}");
 }
 
 // Processor 
@@ -79,5 +83,6 @@ List<ProcessorEntity> processorEntities = JsonSerializer.Deserialize<List<Proces
 
 foreach (var processor in processorEntities)
 {
-    Console.WriteLine($"Processor: {processor.ProcessorName}, Cores: {processor.ProcessorCores}, Threads: {processor.ProcessorThreads}, Frequency: {processor.ProcessorFrequency}GHz");
+    Console.WriteLine($"Processor: {processor.ProcessorName}, Cores: {processor.ProcessorCores}, Threads: {processor.ProcessorThreads}," +
+        $" Frequency: {processor.ProcessorFrequency}GHz, Price: {processor.ItemCost}");
 }
