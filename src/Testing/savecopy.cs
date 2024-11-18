@@ -19,7 +19,7 @@ List<RamEntity> ramEntities = JsonSerializer.Deserialize<List<RamEntity>>(File.R
 List<GraphicsCardEntity> graphicsCardEntities = JsonSerializer.Deserialize<List<GraphicsCardEntity>>(File.ReadAllText("JSONData/DataGraphicsCardEntities.json"), options);
 List<ProcessorEntity> processorEntities = JsonSerializer.Deserialize<List<ProcessorEntity>>(File.ReadAllText("JSONData/DataProcessorEntities.json"), options);
 
-List<object> yourSetup = new List<object>();
+
 // Menu
 bool continueProgram = true;
 while (continueProgram)
@@ -45,22 +45,10 @@ while (continueProgram)
             break;
 
         case 1:
-            Console.WriteLine("\nAvailable Motherboards:");
-            for (int i = 0; i < motherboardEntities.Count; i++)
+            foreach (var motherboard in motherboardEntities)
             {
-                Console.WriteLine($"{i + 1}. Motherboard: {motherboardEntities[i].MotherboardName}, Chipset: {motherboardEntities[i].MotherboardChipset}, " +
-                    $"RAM Type: {motherboardEntities[i].RamType}, Max RAM: {motherboardEntities[i].MaxRamCapacity}GB, Price: {motherboardEntities[i].ItemCost}");
-            }
-
-            Console.Write("\nEnter the number of the motherboard you want to add to your setup (0 to cancel): ");
-            if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= motherboardEntities.Count)
-            {
-                yourSetup.Add(motherboardEntities[choice - 1]);
-                Console.WriteLine("Motherboard added to your setup.");
-            }
-            else if (choice != 0)
-            {
-                Console.WriteLine("Invalid choice. No motherboard added.");
+                Console.WriteLine($"Motherboard: {motherboard.MotherboardName}, Chipset: {motherboard.MotherboardChipset}, " +
+                    $"RAM Type: {motherboard.RamType}, Max RAM: {motherboard.MaxRamCapacity}GB, Price: {motherboard.ItemCost}");
             }
             break;
 
@@ -100,21 +88,6 @@ while (continueProgram)
             foreach (var powerSupply in powerSupplies)
             {
                 Console.WriteLine($"Power Supply: {powerSupply.PowerName}, Wattage: {powerSupply.PowerValue}, Price: {powerSupply.ItemCost}");
-            }
-            break;
-
-        case 7:
-            Console.WriteLine("\nYour current setup:");
-            if (yourSetup.Count == 0)
-            {
-                Console.WriteLine("Your setup is empty.");
-            }
-            else
-            {
-                foreach (var item in yourSetup)
-                {
-                    Console.WriteLine(item);
-                }
             }
             break;
 
