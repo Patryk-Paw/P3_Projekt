@@ -32,11 +32,12 @@ while (continueProgram)
     Console.WriteLine("4. RAM");
     Console.WriteLine("5. Disks");
     Console.WriteLine("6. Power Supplies");
+    Console.WriteLine("7. Your chosen setup");
     Console.WriteLine("0. Exit");
 
     Console.Write("\nEnter your choice: ");
     int number = Convert.ToInt32(Console.ReadLine());
-
+    int choice;
     switch (number)
     {
         case 0:
@@ -53,7 +54,7 @@ while (continueProgram)
             }
 
             Console.Write("\nEnter the number of the motherboard you want to add to your setup (0 to cancel): ");
-            if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= motherboardEntities.Count)
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= motherboardEntities.Count)
             {
                 yourSetup.Add(motherboardEntities[choice - 1]);
                 Console.WriteLine("Motherboard added to your setup.");
@@ -65,41 +66,106 @@ while (continueProgram)
             break;
 
         case 2:
-            foreach (var gpu in graphicsCardEntities)
+            Console.WriteLine("\nAvailable Graphics Cards:");
+            for (int i = 0; i < graphicsCardEntities.Count; i++)
             {
-                Console.WriteLine($"GPU: {gpu.GraphicsName}, VRAM: {gpu.GraphicsRam}GB, Core Frequency: {gpu.GraphicsCoreFrequency}MHz," +
-                    $" Power: {gpu.RecommendedGraphicsPower}W, Price: {gpu.ItemCost}");
+                Console.WriteLine($"{i + 1}. GPU: {graphicsCardEntities[i].GraphicsName}, VRAM: {graphicsCardEntities[i].GraphicsRam}GB, " +
+                    $"Core Frequency: {graphicsCardEntities[i].GraphicsCoreFrequency}MHz, Power: {graphicsCardEntities[i].RecommendedGraphicsPower}W, " +
+                    $"Price: {graphicsCardEntities[i].ItemCost}");
+            }
+
+            Console.Write("\nEnter the number of the graphics card you want to add to your setup (0 to cancel): ");
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= graphicsCardEntities.Count)
+            {
+                yourSetup.Add(graphicsCardEntities[choice - 1]);
+                Console.WriteLine("Graphics card added to your setup.");
+            }
+            else if (choice != 0)
+            {
+                Console.WriteLine("Invalid choice. No graphics card added.");
             }
             break;
 
         case 3:
-            foreach (var processor in processorEntities)
+            Console.WriteLine("\nAvailable Processors:");
+            for (int i = 0; i < processorEntities.Count; i++)
             {
-                Console.WriteLine($"Processor: {processor.ProcessorName}, Cores: {processor.ProcessorCores}, Threads: {processor.ProcessorThreads}," +
-                    $" Frequency: {processor.ProcessorFrequency}GHz, Price: {processor.ItemCost}");
+                Console.WriteLine($"{i + 1}. Processor: {processorEntities[i].ProcessorName}, Cores: {processorEntities[i].ProcessorCores}, " +
+                    $"Threads: {processorEntities[i].ProcessorThreads}, Frequency: {processorEntities[i].ProcessorFrequency}GHz, " +
+                    $"Price: {processorEntities[i].ItemCost}");
+            }
+
+            Console.Write("\nEnter the number of the processor you want to add to your setup (0 to cancel): ");
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= processorEntities.Count)
+            {
+                yourSetup.Add(processorEntities[choice - 1]);
+                Console.WriteLine("Processor added to your setup.");
+            }
+            else if (choice != 0)
+            {
+                Console.WriteLine("Invalid choice. No processor added.");
             }
             break;
 
         case 4:
-            foreach (var ram in ramEntities)
+            Console.WriteLine("\nAvailable RAM:");
+            for (int i = 0; i < ramEntities.Count; i++)
             {
-                Console.WriteLine($"RAM: {ram.RamName}, Capacity: {ram.RamCapacity}GB, Frequency: " +
-                    $"{ram.RamFrequency}MHz, Modules: {ram.ModulesNumber}, Price: {ram.ItemCost}");
+                Console.WriteLine($"{i + 1}. RAM: {ramEntities[i].RamName}, Capacity: {ramEntities[i].RamCapacity}GB, " +
+                    $"Frequency: {ramEntities[i].RamFrequency}MHz, Modules: {ramEntities[i].ModulesNumber}, " +
+                    $"Price: {ramEntities[i].ItemCost}");
+            }
+
+            Console.Write("\nEnter the number of the RAM you want to add to your setup (0 to cancel): ");
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= ramEntities.Count)
+            {
+                yourSetup.Add(ramEntities[choice - 1]);
+                Console.WriteLine("RAM added to your setup.");
+            }
+            else if (choice != 0)
+            {
+                Console.WriteLine("Invalid choice. No RAM added.");
             }
             break;
 
         case 5:
-            foreach (var disk in diskEntities)
+            Console.WriteLine("\nAvailable Disks:");
+            for (int i = 0; i < diskEntities.Count; i++)
             {
-                Console.WriteLine($"Disk: {disk.DiskName}, Capacity: {disk.DiskCapacity}GB, Read Speed: {disk.DiskReading}MB/s," +
-                    $" Write Speed: {disk.DiskWrite}MB/s, Price: {disk.ItemCost}");
+                Console.WriteLine($"{i + 1}. Disk: {diskEntities[i].DiskName}, Capacity: {diskEntities[i].DiskCapacity}GB, " +
+                    $"Read Speed: {diskEntities[i].DiskReading}MB/s, Write Speed: {diskEntities[i].DiskWrite}MB/s, " +
+                    $"Price: {diskEntities[i].ItemCost}");
+            }
+
+            Console.Write("\nEnter the number of the disk you want to add to your setup (0 to cancel): ");
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= diskEntities.Count)
+            {
+                yourSetup.Add(diskEntities[choice - 1]);
+                Console.WriteLine("Disk added to your setup.");
+            }
+            else if (choice != 0)
+            {
+                Console.WriteLine("Invalid choice. No disk added.");
             }
             break;
 
         case 6:
-            foreach (var powerSupply in powerSupplies)
+            Console.WriteLine("\nAvailable Power Supplies:");
+            for (int i = 0; i < powerSupplies.Count; i++)
             {
-                Console.WriteLine($"Power Supply: {powerSupply.PowerName}, Wattage: {powerSupply.PowerValue}, Price: {powerSupply.ItemCost}");
+                Console.WriteLine($"{i + 1}. Power Supply: {powerSupplies[i].PowerName}, Wattage: {powerSupplies[i].PowerValue}, " +
+                    $"Price: {powerSupplies[i].ItemCost}");
+            }
+
+            Console.Write("\nEnter the number of the power supply you want to add to your setup (0 to cancel): ");
+            if (int.TryParse(Console.ReadLine(), out choice) && choice > 0 && choice <= powerSupplies.Count)
+            {
+                yourSetup.Add(powerSupplies[choice - 1]);
+                Console.WriteLine("Power supply added to your setup.");
+            }
+            else if (choice != 0)
+            {
+                Console.WriteLine("Invalid choice. No power supply added.");
             }
             break;
 
@@ -111,10 +177,46 @@ while (continueProgram)
             }
             else
             {
+                double? totalCost = 0;
                 foreach (var item in yourSetup)
                 {
-                    Console.WriteLine(item);
+                    if (item is MotherboardEntity motherboard)
+                    {
+                        Console.WriteLine($"Motherboard: {motherboard.MotherboardName}, Chipset: {motherboard.MotherboardChipset}, " +
+                            $"RAM Type: {motherboard.RamType}, Max RAM: {motherboard.MaxRamCapacity}GB, Price: {motherboard.ItemCost:C}");
+                        totalCost += motherboard.ItemCost;
+                    }
+                    else if (item is GraphicsCardEntity gpu)
+                    {
+                        Console.WriteLine($"GPU: {gpu.GraphicsName}, VRAM: {gpu.GraphicsRam}GB, Core Frequency: {gpu.GraphicsCoreFrequency}MHz, " +
+                            $"Power: {gpu.RecommendedGraphicsPower}W, Price: {gpu.ItemCost:C}");
+                        totalCost += gpu.ItemCost;
+                    }
+                    else if (item is ProcessorEntity processor)
+                    {
+                        Console.WriteLine($"Processor: {processor.ProcessorName}, Cores: {processor.ProcessorCores}, Threads: {processor.ProcessorThreads}, " +
+                            $"Frequency: {processor.ProcessorFrequency}GHz, Price: {processor.ItemCost:C}");
+                        totalCost += processor.ItemCost;
+                    }
+                    else if (item is RamEntity ram)
+                    {
+                        Console.WriteLine($"RAM: {ram.RamName}, Capacity: {ram.RamCapacity}GB, Frequency: {ram.RamFrequency}MHz, " +
+                            $"Modules: {ram.ModulesNumber}, Price: {ram.ItemCost:C}");
+                        totalCost += ram.ItemCost;
+                    }
+                    else if (item is DiskEntity disk)
+                    {
+                        Console.WriteLine($"Disk: {disk.DiskName}, Capacity: {disk.DiskCapacity}GB, Read Speed: {disk.DiskReading}MB/s, " +
+                            $"Write Speed: {disk.DiskWrite}MB/s, Price: {disk.ItemCost:C}");
+                        totalCost += disk.ItemCost;
+                    }
+                    else if (item is PowerSupplyEntity powerSupply)
+                    {
+                        Console.WriteLine($"Power Supply: {powerSupply.PowerName}, Wattage: {powerSupply.PowerValue}, Price: {powerSupply.ItemCost:C}");
+                        totalCost += powerSupply.ItemCost;
+                    }
                 }
+                Console.WriteLine($"\nTotal cost of your setup: {totalCost:C}");
             }
             break;
 
@@ -122,7 +224,6 @@ while (continueProgram)
             Console.WriteLine("Invalid choice. Please try again.");
             break;
     }
-
     if (continueProgram)
     {
         Console.WriteLine("\nPress Enter key to return to the main menu...");
