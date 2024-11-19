@@ -137,5 +137,3 @@ public interface IEntity
 {
     decimal ItemCost { get; set; }
 }
-
-// Ensure all your entity classes implement IEntity
