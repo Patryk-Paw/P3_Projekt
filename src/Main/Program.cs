@@ -172,6 +172,7 @@ while (continueProgram)
 
         case 7:
             Console.WriteLine("\nYour current setup:");
+            Console.WriteLine();
             if (yourSetup.Count == 0)
             {
                 Console.WriteLine("Your setup is empty.");
