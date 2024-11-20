@@ -11,13 +11,14 @@ var options = new JsonSerializerOptions
     ReferenceHandler = ReferenceHandler.Preserve,
     WriteIndented = true
 };
+
 // Loading all objects from .JSON file
-List<PowerSupplyEntity> powerSupplies = JsonSerializer.Deserialize<List<PowerSupplyEntity>>(File.ReadAllText("JSONData/DataPowerSupplies.json"), options);
-List<DiskEntity> diskEntities = JsonSerializer.Deserialize<List<DiskEntity>>(File.ReadAllText("JSONData/DataDiskEntities.json"), options);
-List<MotherboardEntity> motherboardEntities = JsonSerializer.Deserialize<List<MotherboardEntity>>(File.ReadAllText("JSONData/DataMotherboardEntities.json"), options);
-List<RamEntity> ramEntities = JsonSerializer.Deserialize<List<RamEntity>>(File.ReadAllText("JSONData/DataRamEntities.json"), options);
-List<GraphicsCardEntity> graphicsCardEntities = JsonSerializer.Deserialize<List<GraphicsCardEntity>>(File.ReadAllText("JSONData/DataGraphicsCardEntities.json"), options);
-List<ProcessorEntity> processorEntities = JsonSerializer.Deserialize<List<ProcessorEntity>>(File.ReadAllText("JSONData/DataProcessorEntities.json"), options);
+List<PowerSupplyEntity> powerSupplies = JsonSerializer.Deserialize<List<PowerSupplyEntity>>(File.ReadAllText("../../../../JSONData/DataPowerSupplies.json"), options);
+List<DiskEntity> diskEntities = JsonSerializer.Deserialize<List<DiskEntity>>(File.ReadAllText("../../../../JSONData/DataDiskEntities.json"), options);
+List<MotherboardEntity> motherboardEntities = JsonSerializer.Deserialize<List<MotherboardEntity>>(File.ReadAllText("../../../../JSONData/DataMotherboardEntities.json"), options);
+List<RamEntity> ramEntities = JsonSerializer.Deserialize<List<RamEntity>>(File.ReadAllText("../../../../JSONData/DataRamEntities.json"), options);
+List<GraphicsCardEntity> graphicsCardEntities = JsonSerializer.Deserialize<List<GraphicsCardEntity>>(File.ReadAllText("../../../../JSONData/DataGraphicsCardEntities.json"), options);
+List<ProcessorEntity> processorEntities = JsonSerializer.Deserialize<List<ProcessorEntity>>(File.ReadAllText("../../../../JSONData/DataProcessorEntities.json"), options);
 
 List<object> yourSetup = new List<object>();
 // Menu
