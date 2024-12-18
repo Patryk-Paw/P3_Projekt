@@ -103,5 +103,35 @@
     "RamCapacity": 64,
     "RamFrequency": 3600,
     "ModulesNumber": 4
+  },
+  {
+    "ClassID": 4,
+    "ItemName": "Corsair Vengeance LPX 8GB",
+    "ItemType": "RAM",
+    "ItemCost": 49.99,
+    "ItemQuantity": 30,
+    "Accesibility": true,
+    "RamId": 8,
+    "RamName": "Vengeance LPX",
+    "RamType": "DDR4",
+    "RamSocket": "DIMM",
+    "RamCapacity": 8,
+    "RamFrequency": 2400,
+    "ModulesNumber": 1
+  },
+  {
+    "ClassID": 4,
+    "ItemName": "G.Skill Ripjaws V 16GB",
+    "ItemType": "RAM",
+    "ItemCost": 89.99,
+    "ItemQuantity": 25,
+    "Accesibility": true,
+    "RamId": 9,
+    "RamName": "Ripjaws V",
+    "RamType": "DDR4",
+    "RamSocket": "DIMM",
+    "RamCapacity": 16,
+    "RamFrequency": 2666,
+    "ModulesNumber": 2
   }
 ]

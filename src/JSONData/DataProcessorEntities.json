@@ -96,5 +96,33 @@
     "ProcessorCores": 12,
     "ProcessorFrequency": 3.7,
     "ProcessorThreads": 24
+  },
+  {
+    "ClassID": 2,
+    "ItemName": "Intel Core i7-7700K",
+    "ItemType": "Processor",
+    "ItemCost": 329.99,
+    "ItemQuantity": 5,
+    "Accesibility": true,
+    "ProcessorId": 8,
+    "ProcessorName": "Core i7-7700K",
+    "ProcessorSocket": "LGA1151",
+    "ProcessorCores": 4,
+    "ProcessorFrequency": 4.2,
+    "ProcessorThreads": 8
+  },
+  {
+    "ClassID": 2,
+    "ItemName": "AMD Ryzen 5 1600",
+    "ItemType": "Processor",
+    "ItemCost": 149.99,
+    "ItemQuantity": 8,
+    "Accesibility": true,
+    "ProcessorId": 9,
+    "ProcessorName": "Ryzen 5 1600",
+    "ProcessorSocket": "AM4",
+    "ProcessorCores": 6,
+    "ProcessorFrequency": 3.2,
+    "ProcessorThreads": 12
   }
 ]

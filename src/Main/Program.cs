@@ -14,6 +14,7 @@ class Program
     static List<ProcessorEntity> processorEntities;
     static List<object> yourSetup = new List<object>();
     static MotherboardEntity selectedMotherboard = null;
+    static double? totalRamCapacity = 0;
 
     static void Main(string[] args)
     {
@@ -117,6 +118,7 @@ class Program
             selectedMotherboard = motherboardEntities[choice - 1];
             yourSetup.Clear(); // Clear previous setup
             yourSetup.Add(selectedMotherboard);
+            totalRamCapacity = 0; // Reset total RAM capacity
             Console.WriteLine("Motherboard added to your setup. Other components will be filtered based on this selection.");
         }
         else if (choice != 0)
@@ -163,12 +165,20 @@ class Program
             return;
         }
 
+        double? remainingRamCapacity = selectedMotherboard.MaxRamCapacity - totalRamCapacity;
+
+        if (remainingRamCapacity <= 0)
+        {
+            Console.WriteLine($"You've already reached the maximum RAM capacity for this motherboard ({selectedMotherboard.MaxRamCapacity}GB).");
+            return;
+        }
+
         var compatibleRAM = ramEntities.Where(r =>
             r.RamType == selectedMotherboard.RamType &&
             r.RamSocket == selectedMotherboard.RamSockets.FirstOrDefault() &&
-            r.RamCapacity <= selectedMotherboard.MaxRamCapacity).ToList();
+            r.RamCapacity <= remainingRamCapacity).ToList();
 
-        Console.WriteLine("\nCompatible RAM:");
+        Console.WriteLine($"\nCompatible RAM (Remaining capacity: {remainingRamCapacity}GB):");
         for (int i = 0; i < compatibleRAM.Count; i++)
         {
             Console.WriteLine($"{i + 1}. RAM: {compatibleRAM[i].RamName}, Capacity: {compatibleRAM[i].RamCapacity}GB, " +
@@ -179,8 +189,10 @@ class Program
         Console.Write("\nEnter the number of the RAM you want to add to your setup (0 to cancel): ");
         if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= compatibleRAM.Count)
         {
-            yourSetup.Add(compatibleRAM[choice - 1]);
-            Console.WriteLine("RAM added to your setup.");
+            var selectedRam = compatibleRAM[choice - 1];
+            yourSetup.Add(selectedRam);
+            totalRamCapacity += selectedRam.RamCapacity;
+            Console.WriteLine($"RAM added to your setup. Total RAM capacity: {totalRamCapacity}GB");
         }
         else if (choice != 0)
         {
@@ -220,18 +232,26 @@ class Program
 
     static void DisplayGraphicsCards()
     {
-        Console.WriteLine("\nAvailable Graphics Cards:");
-        for (int i = 0; i < graphicsCardEntities.Count; i++)
+        if (selectedMotherboard == null)
         {
-            Console.WriteLine($"{i + 1}. GPU: {graphicsCardEntities[i].GraphicsName}, VRAM: {graphicsCardEntities[i].GraphicsRam}GB, " +
-                $"Core Frequency: {graphicsCardEntities[i].GraphicsCoreFrequency}MHz, Power: {graphicsCardEntities[i].RecommendedGraphicsPower}W, " +
-                $"Price: {graphicsCardEntities[i].ItemCost}");
+            Console.WriteLine("Please select a motherboard first.");
+            return;
+        }
+
+        var compatibleGraphicsCards = graphicsCardEntities.Where(g => selectedMotherboard.GraphicsSockets.Contains(g.GraphicsSocket)).ToList();
+
+        Console.WriteLine("\nCompatible Graphics Cards:");
+        for (int i = 0; i < compatibleGraphicsCards.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. GPU: {compatibleGraphicsCards[i].GraphicsName}, VRAM: {compatibleGraphicsCards[i].GraphicsRam}GB, " +
+                $"Core Frequency: {compatibleGraphicsCards[i].GraphicsCoreFrequency}MHz, Power: {compatibleGraphicsCards[i].RecommendedGraphicsPower}W, " +
+                $"Price: {compatibleGraphicsCards[i].ItemCost}");
         }
 
         Console.Write("\nEnter the number of the graphics card you want to add to your setup (0 to cancel): ");
-        if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= graphicsCardEntities.Count)
+        if (int.TryParse(Console.ReadLine(), out int choice) && choice > 0 && choice <= compatibleGraphicsCards.Count)
         {
-            yourSetup.Add(graphicsCardEntities[choice - 1]);
+            yourSetup.Add(compatibleGraphicsCards[choice - 1]);
             Console.WriteLine("Graphics card added to your setup.");
         }
         else if (choice != 0)
@@ -309,7 +329,8 @@ class Program
                     totalCost += powerSupply.ItemCost ?? 0;
                 }
             }
-            Console.WriteLine($"\nTotal cost of your setup: {totalCost:C}");
+            Console.WriteLine($"\nTotal RAM capacity: {totalRamCapacity}GB");
+            Console.WriteLine($"Total cost of your setup: {totalCost:C}");
         }
     }
 }

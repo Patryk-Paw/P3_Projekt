@@ -103,5 +103,35 @@
     "DiskReading": 240,
     "DiskWrite": 240,
     "DiskSocket": "SATA"
+  },
+  {
+    "ClassID": 5,
+    "ItemName": "Samsung 850 EVO",
+    "ItemType": "Disk",
+    "ItemCost": 89.99,
+    "ItemQuantity": 18,
+    "Accesibility": true,
+    "DiskID": 8,
+    "DiskName": "Samsung 850 EVO",
+    "DiskCapacity": 500,
+    "DiskFormat": "2.5\" SATA",
+    "DiskReading": 540,
+    "DiskWrite": 520,
+    "DiskSocket": "SATA"
+  },
+  {
+    "ClassID": 5,
+    "ItemName": "Western Digital Blue 1TB",
+    "ItemType": "Disk",
+    "ItemCost": 44.99,
+    "ItemQuantity": 22,
+    "Accesibility": true,
+    "DiskID": 9,
+    "DiskName": "WD Blue",
+    "DiskCapacity": 1000,
+    "DiskFormat": "3.5\" HDD",
+    "DiskReading": 150,
+    "DiskWrite": 150,
+    "DiskSocket": "SATA"
   }
 ]
