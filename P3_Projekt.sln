@@ -11,8 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\shared\Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main", "src\Main\Main.csproj", "{A673C601-649C-49D3-A510-2F1816F63000}"
 EndProject
-<<<<<<< HEAD
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSONData", "JSONData", "{0A014C00-BB83-42D8-BB74-EE0AEDC78132}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSONData", "JSONData", "{39FC1ED8-3E11-40AF-8EDD-CDA53E981736}"
+
 	ProjectSection(SolutionItems) = preProject
 		src\JSONData\DataDiskEntities.json = src\JSONData\DataDiskEntities.json
 		src\JSONData\DataGraphicsCardEntities.json = src\JSONData\DataGraphicsCardEntities.json
@@ -21,9 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSONData", "JSONData", "{0A
 		src\JSONData\DataProcessorEntities.json = src\JSONData\DataProcessorEntities.json
 		src\JSONData\DataRamEntities.json = src\JSONData\DataRamEntities.json
 	EndProjectSection
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savecoppy", "src\Testing\Savecoppy.csproj", "{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7}"
->>>>>>> b466e680c47283cdcff0a220050355c08a073999
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +36,6 @@ Global
 		{A673C601-649C-49D3-A510-2F1816F63000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A673C601-649C-49D3-A510-2F1816F63000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A673C601-649C-49D3-A510-2F1816F63000}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,11 +44,8 @@ Global
 		{55D3DA36-04C4-4711-8540-C6245DF5F3D4} = {5D5D6354-E677-44F6-B199-4758B0EAEA11}
 		{1B941CED-5D1B-414C-9CAD-A2E5A0A39F78} = {55D3DA36-04C4-4711-8540-C6245DF5F3D4}
 		{A673C601-649C-49D3-A510-2F1816F63000} = {5D5D6354-E677-44F6-B199-4758B0EAEA11}
-<<<<<<< HEAD
-		{0A014C00-BB83-42D8-BB74-EE0AEDC78132} = {5D5D6354-E677-44F6-B199-4758B0EAEA11}
-=======
-		{C9EEDD73-7D2E-4FAF-BE7C-617C980C34B7} = {5D5D6354-E677-44F6-B199-4758B0EAEA11}
->>>>>>> b466e680c47283cdcff0a220050355c08a073999
+		{39FC1ED8-3E11-40AF-8EDD-CDA53E981736} = {5D5D6354-E677-44F6-B199-4758B0EAEA11}
+
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A885273E-EBDC-4726-BA8E-E10DFFA8BDFA}

@@ -103,5 +103,45 @@
       "SATA",
       "Molex"
     ]
+  },
+  {
+    "ClassID": 6,
+    "ItemName": "Corsair CX550",
+    "ItemType": "Power Supply",
+    "ItemCost": 59.99,
+    "ItemQuantity": 20,
+    "Accesibility": true,
+    "PowerId": 6,
+    "PowerName": "Corsair CX550",
+    "PowerStandard": "ATX",
+    "PowerValue": "550W",
+    "PowerCertificate": "80 PLUS Bronze",
+    "PowerSockets": [
+      "24-pin ATX",
+      "8-pin EPS",
+      "6+2-pin PCIe",
+      "SATA",
+      "Molex"
+    ]
+  },
+  {
+    "ClassID": 6,
+    "ItemName": "EVGA 500 W1",
+    "ItemType": "Power Supply",
+    "ItemCost": 44.99,
+    "ItemQuantity": 25,
+    "Accesibility": true,
+    "PowerId": 7,
+    "PowerName": "EVGA 500 W1",
+    "PowerStandard": "ATX",
+    "PowerValue": "500W",
+    "PowerCertificate": "80 PLUS",
+    "PowerSockets": [
+      "24-pin ATX",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
+      "SATA",
+      "Molex"
+    ]
   }
 ]

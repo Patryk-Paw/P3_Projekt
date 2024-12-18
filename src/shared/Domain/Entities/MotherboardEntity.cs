@@ -12,6 +12,7 @@ public class MotherboardEntity : HardwareEntity
     public IEnumerable<string>? ProcessorSockets { get; set; }
     public IEnumerable<string>? RamSockets { get; set; }
     public IEnumerable<string>? DiskSockets { get; set; }
+    public IEnumerable<string>? GraphicsSockets { get; set; }
     public string? RamType { get; set; }
     public int? MaxRamCapacity { get; set; }
     public int? MaxRamSlots { get; set; }
@@ -27,7 +28,7 @@ public class MotherboardEntity : HardwareEntity
                              string motherboardName, string motherboardChipset,
                              IEnumerable<string> processorSocket, IEnumerable<string> ramSockets,
                              string ramType, int maxRamCapacity, IEnumerable<string> diskSockets,
-                             string motherboardStandard, int maxRamSlots)
+                             IEnumerable<string> graphicsSockets, string motherboardStandard, int maxRamSlots)
     {
         // Initialize base class (HardwareEntity) properties
         ClassID = classID;
@@ -46,6 +47,7 @@ public class MotherboardEntity : HardwareEntity
         RamType = ramType;
         MaxRamCapacity = maxRamCapacity;
         DiskSockets = diskSockets;
+        GraphicsSockets = graphicsSockets;
         MotherboardStandard = motherboardStandard;
         MaxRamSlots = maxRamSlots;
     }

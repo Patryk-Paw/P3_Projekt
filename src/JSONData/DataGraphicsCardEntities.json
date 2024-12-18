@@ -110,5 +110,37 @@
     "RecommendedGraphicsPower": 350,
     "GraphicsRam": 24,
     "CoolingNumber": 3
+  },
+  {
+    "ClassID": 3,
+    "ItemName": "NVIDIA GeForce GTX 1060 6GB",
+    "ItemType": "Graphics Card",
+    "ItemCost": 299.99,
+    "ItemQuantity": 12,
+    "Accesibility": true,
+    "GraphicsID": 8,
+    "GraphicsName": "GeForce GTX 1060 6GB",
+    "GraphicsSocket": "PCIe 3.0 x16",
+    "GraphicsCoreFrequency": 1506,
+    "GraphicsMemoryFrequency": 8000,
+    "RecommendedGraphicsPower": 120,
+    "GraphicsRam": 6,
+    "CoolingNumber": 2
+  },
+  {
+    "ClassID": 3,
+    "ItemName": "AMD Radeon RX 580 8GB",
+    "ItemType": "Graphics Card",
+    "ItemCost": 229.99,
+    "ItemQuantity": 10,
+    "Accesibility": true,
+    "GraphicsID": 9,
+    "GraphicsName": "Radeon RX 580 8GB",
+    "GraphicsSocket": "PCIe 3.0 x16",
+    "GraphicsCoreFrequency": 1257,
+    "GraphicsMemoryFrequency": 8000,
+    "RecommendedGraphicsPower": 185,
+    "GraphicsRam": 8,
+    "CoolingNumber": 2
   }
 ]
