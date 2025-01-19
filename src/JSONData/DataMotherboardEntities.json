@@ -1,173 +1,258 @@
 [
   {
+    "MotherboardId": 1,
+    "MotherboardName": "ROG Maximus XIII Hero",
+    "MotherboardChipset": "Z590",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "LGA1200"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 4.0 x16",
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "ASUS ROG Maximus XIII Hero",
     "ItemType": "Motherboard",
     "ItemCost": 499.99,
     "ItemQuantity": 10,
-    "Accesibility": true,
-    "MotherboardId": 1,
-    "MotherboardName": "ROG Maximus XIII Hero",
-    "MotherboardChipset": "Z590",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "LGA1200" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 4.0 x16", "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 2,
+    "MotherboardName": "MPG B550 GAMING EDGE WIFI",
+    "MotherboardChipset": "B550",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "AM4"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 4.0 x16",
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "MSI MPG B550 GAMING EDGE WIFI",
     "ItemType": "Motherboard",
     "ItemCost": 179.99,
     "ItemQuantity": 15,
-    "Accesibility": true,
-    "MotherboardId": 2,
-    "MotherboardName": "MPG B550 GAMING EDGE WIFI",
-    "MotherboardChipset": "B550",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "AM4" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 4.0 x16", "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 3,
+    "MotherboardName": "X570 AORUS ELITE",
+    "MotherboardChipset": "X570",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "AM4"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 4.0 x16",
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "Gigabyte X570 AORUS ELITE",
     "ItemType": "Motherboard",
     "ItemCost": 199.99,
     "ItemQuantity": 8,
-    "Accesibility": true,
-    "MotherboardId": 3,
-    "MotherboardName": "X570 AORUS ELITE",
-    "MotherboardChipset": "X570",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "AM4" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 4.0 x16", "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 4,
+    "MotherboardName": "B460M Pro4",
+    "MotherboardChipset": "B460",
+    "MotherboardStandard": "Micro ATX",
+    "ProcessorSockets": [
+      "LGA1200"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "ASRock B460M Pro4",
     "ItemType": "Motherboard",
     "ItemCost": 94.99,
     "ItemQuantity": 20,
-    "Accesibility": true,
-    "MotherboardId": 4,
-    "MotherboardName": "B460M Pro4",
-    "MotherboardChipset": "B460",
-    "MotherboardStandard": "Micro ATX",
-    "ProcessorSockets": [ "LGA1200" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 5,
+    "MotherboardName": "ROG Strix X570-E Gaming",
+    "MotherboardChipset": "X570",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "AM4"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 4.0 x16",
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "ASUS ROG Strix X570-E Gaming",
     "ItemType": "Motherboard",
     "ItemCost": 299.99,
     "ItemQuantity": 12,
-    "Accesibility": true,
-    "MotherboardId": 5,
-    "MotherboardName": "ROG Strix X570-E Gaming",
-    "MotherboardChipset": "X570",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "AM4" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 4.0 x16", "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 6,
+    "MotherboardName": "MEG Z490 GODLIKE",
+    "MotherboardChipset": "Z490",
+    "MotherboardStandard": "E-ATX",
+    "ProcessorSockets": [
+      "LGA1200"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 128,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "MSI MEG Z490 GODLIKE",
     "ItemType": "Motherboard",
     "ItemCost": 749.99,
     "ItemQuantity": 5,
-    "Accesibility": true,
-    "MotherboardId": 6,
-    "MotherboardName": "MEG Z490 GODLIKE",
-    "MotherboardChipset": "Z490",
-    "MotherboardStandard": "E-ATX",
-    "ProcessorSockets": [ "LGA1200" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 128,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 7,
+    "MotherboardName": "B550I AORUS PRO AX",
+    "MotherboardChipset": "B550",
+    "MotherboardStandard": "Mini ITX",
+    "ProcessorSockets": [
+      "AM4"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 4.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 64,
+    "MaxRamSlots": 2,
     "ClassID": 1,
     "ItemName": "Gigabyte B550I AORUS PRO AX",
     "ItemType": "Motherboard",
     "ItemCost": 179.99,
     "ItemQuantity": 0,
-    "Accesibility": false,
-    "MotherboardId": 7,
-    "MotherboardName": "B550I AORUS PRO AX",
-    "MotherboardChipset": "B550",
-    "MotherboardStandard": "Mini ITX",
-    "ProcessorSockets": [ "AM4" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 4.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 64,
-    "MaxRamSlots": 2
+    "Accesibility": false
   },
   {
+    "MotherboardId": 8,
+    "MotherboardName": "PRIME Z270-A",
+    "MotherboardChipset": "Z270",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "LGA1151"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 64,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "ASUS PRIME Z270-A",
     "ItemType": "Motherboard",
     "ItemCost": 159.99,
     "ItemQuantity": 7,
-    "Accesibility": true,
-    "MotherboardId": 8,
-    "MotherboardName": "PRIME Z270-A",
-    "MotherboardChipset": "Z270",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "LGA1151" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 64,
-    "MaxRamSlots": 4
+    "Accesibility": true
   },
   {
+    "MotherboardId": 9,
+    "MotherboardName": "B350 TOMAHAWK",
+    "MotherboardChipset": "B350",
+    "MotherboardStandard": "ATX",
+    "ProcessorSockets": [
+      "AM4"
+    ],
+    "RamSockets": [
+      "DIMM"
+    ],
+    "DiskSockets": [
+      "M.2",
+      "SATA"
+    ],
+    "GraphicsSockets": [
+      "PCIe 3.0 x16"
+    ],
+    "RamType": "DDR4",
+    "MaxRamCapacity": 64,
+    "MaxRamSlots": 4,
     "ClassID": 1,
     "ItemName": "MSI B350 TOMAHAWK",
     "ItemType": "Motherboard",
     "ItemCost": 99.99,
     "ItemQuantity": 6,
-    "Accesibility": true,
-    "MotherboardId": 9,
-    "MotherboardName": "B350 TOMAHAWK",
-    "MotherboardChipset": "B350",
-    "MotherboardStandard": "ATX",
-    "ProcessorSockets": [ "AM4" ],
-    "RamSockets": [ "DIMM" ],
-    "DiskSockets": [ "M.2", "SATA" ],
-    "GraphicsSockets": [ "PCIe 3.0 x16" ],
-    "RamType": "DDR4",
-    "MaxRamCapacity": 64,
-    "MaxRamSlots": 4
+    "Accesibility": true
   }
 ]
