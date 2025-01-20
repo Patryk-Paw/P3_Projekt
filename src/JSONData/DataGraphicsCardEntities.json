@@ -142,21 +142,5 @@
     "ItemCost": 229.99,
     "ItemQuantity": 10,
     "Accesibility": true
-  },
-  {
-    "GraphicsID": 1,
-    "GraphicsName": "test",
-    "GraphicsSocket": "TEST",
-    "GraphicsCoreFrequency": 3222,
-    "GraphicsMemoryFrequency": 3222,
-    "RecommendedGraphicsPower": 600,
-    "GraphicsRam": 8,
-    "CoolingNumber": 3,
-    "ClassID": 3,
-    "ItemName": "test",
-    "ItemType": "Graphics Card",
-    "ItemCost": 87,
-    "ItemQuantity": 0,
-    "Accesibility": false
   }
 ]

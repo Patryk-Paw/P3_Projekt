@@ -124,19 +124,5 @@
     "ItemCost": 149.99,
     "ItemQuantity": 8,
     "Accesibility": true
-  },
-  {
-    "ProcessorId": 1,
-    "ProcessorName": "test",
-    "ProcessorSocket": "TEST",
-    "ProcessorCores": 4,
-    "ProcessorFrequency": 3.6,
-    "ProcessorThreads": 32,
-    "ClassID": 2,
-    "ItemName": "test",
-    "ItemType": "Processor",
-    "ItemCost": 999.99,
-    "ItemQuantity": 7,
-    "Accesibility": true
   }
 ]

@@ -133,20 +133,5 @@
     "ItemCost": 44.99,
     "ItemQuantity": 22,
     "Accesibility": true
-  },
-  {
-    "DiskID": 1,
-    "DiskName": "test",
-    "DiskCapacity": 500,
-    "DiskFormat": "TEST",
-    "DiskReading": 3000,
-    "DiskWrite": 3000,
-    "DiskSocket": "TEST",
-    "ClassID": 5,
-    "ItemName": "test",
-    "ItemType": "Disk",
-    "ItemCost": 49.99,
-    "ItemQuantity": 1,
-    "Accesibility": true
   }
 ]

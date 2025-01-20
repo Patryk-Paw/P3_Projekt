@@ -254,40 +254,5 @@
     "ItemCost": 99.99,
     "ItemQuantity": 6,
     "Accesibility": true
-  },
-  {
-    "MotherboardId": 1,
-    "MotherboardName": "Test",
-    "MotherboardChipset": "test",
-    "MotherboardStandard": "TERT",
-    "ProcessorSockets": [
-      "TEST",
-      "TEST",
-      "TEST"
-    ],
-    "RamSockets": [
-      "TEST",
-      "TEST"
-    ],
-    "DiskSockets": [
-      "TEST",
-      "TEST",
-      "TEST",
-      "TERS"
-    ],
-    "GraphicsSockets": [
-      "TE",
-      "RTER",
-      "TER"
-    ],
-    "RamType": "TEST",
-    "MaxRamCapacity": 32,
-    "MaxRamSlots": 4,
-    "ClassID": 1,
-    "ItemName": "Test",
-    "ItemType": "Motherboard",
-    "ItemCost": 499.99,
-    "ItemQuantity": 4,
-    "Accesibility": true
   }
 ]
