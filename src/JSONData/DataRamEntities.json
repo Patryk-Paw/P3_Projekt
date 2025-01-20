@@ -133,5 +133,20 @@
     "ItemCost": 89.99,
     "ItemQuantity": 25,
     "Accesibility": true
+  },
+  {
+    "RamId": 1,
+    "RamName": "test",
+    "RamType": "TEST",
+    "RamSocket": "TEST",
+    "RamCapacity": 32,
+    "RamFrequency": 1337,
+    "ModulesNumber": 4,
+    "ClassID": 4,
+    "ItemName": "test",
+    "ItemType": "RAM",
+    "ItemCost": 499.99,
+    "ItemQuantity": 10,
+    "Accesibility": true
   }
 ]
