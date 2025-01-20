@@ -1,5 +1,11 @@
 [
   {
+    "ClassID": 6,
+    "ItemName": "Corsair RM850x",
+    "ItemType": "Power Supply",
+    "ItemCost": 149.99,
+    "ItemQuantity": 10,
+    "Accesibility": true,
     "PowerId": 1,
     "PowerName": "Corsair RM850x",
     "PowerStandard": "ATX",
@@ -8,18 +14,19 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 149.99,
-    "ItemQuantity": 10,
-    "Accesibility": true
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "EVGA SuperNOVA 750 G5",
+    "ItemType": "Power Supply",
+    "ItemCost": 129.99,
+    "ItemQuantity": 15,
+    "Accesibility": true,
     "PowerId": 2,
     "PowerName": "EVGA SuperNOVA 750 G5",
     "PowerStandard": "ATX",
@@ -28,18 +35,19 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 129.99,
-    "ItemQuantity": 15,
-    "Accesibility": true
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "Seasonic FOCUS GX-650",
+    "ItemType": "Power Supply",
+    "ItemCost": 109.99,
+    "ItemQuantity": 8,
+    "Accesibility": true,
     "PowerId": 3,
     "PowerName": "Seasonic FOCUS GX-650",
     "PowerStandard": "ATX",
@@ -48,18 +56,19 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 109.99,
-    "ItemQuantity": 8,
-    "Accesibility": true
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "be quiet! Straight Power 11 1000W",
+    "ItemType": "Power Supply",
+    "ItemCost": 199.99,
+    "ItemQuantity": 5,
+    "Accesibility": true,
     "PowerId": 4,
     "PowerName": "be quiet! Straight Power 11",
     "PowerStandard": "ATX",
@@ -68,18 +77,19 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 199.99,
-    "ItemQuantity": 5,
-    "Accesibility": true
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "Thermaltake Toughpower GF1 750W",
+    "ItemType": "Power Supply",
+    "ItemCost": 119.99,
+    "ItemQuantity": 0,
+    "Accesibility": false,
     "PowerId": 5,
     "PowerName": "Thermaltake Toughpower GF1",
     "PowerStandard": "ATX",
@@ -88,18 +98,19 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 119.99,
-    "ItemQuantity": 0,
-    "Accesibility": false
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "Corsair CX550",
+    "ItemType": "Power Supply",
+    "ItemCost": 59.99,
+    "ItemQuantity": 20,
+    "Accesibility": true,
     "PowerId": 6,
     "PowerName": "Corsair CX550",
     "PowerStandard": "ATX",
@@ -108,17 +119,18 @@
     "PowerSockets": [
       "24-pin ATX",
       "8-pin EPS",
-      "6\u002B2-pin PCIe",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 59.99,
-    "ItemQuantity": 20,
-    "Accesibility": true
+    ]
   },
   {
+    "ClassID": 6,
+    "ItemName": "EVGA 500 W1",
+    "ItemType": "Power Supply",
+    "ItemCost": 44.99,
+    "ItemQuantity": 25,
+    "Accesibility": true,
     "PowerId": 7,
     "PowerName": "EVGA 500 W1",
     "PowerStandard": "ATX",
@@ -126,31 +138,10 @@
     "PowerCertificate": "80 PLUS",
     "PowerSockets": [
       "24-pin ATX",
-      "4\u002B4-pin CPU",
-      "6\u002B2-pin PCIe",
+      "4+4-pin CPU",
+      "6+2-pin PCIe",
       "SATA",
       "Molex"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 44.99,
-    "ItemQuantity": 25,
-    "Accesibility": true
-  },
-  {
-    "PowerId": 1,
-    "PowerName": "test",
-    "PowerStandard": "TEST",
-    "PowerValue": "TEST",
-    "PowerCertificate": "TEST",
-    "PowerSockets": [
-      "TEST",
-      "TES"
-    ],
-    "ClassID": 6,
-    "ItemType": "Power Supply",
-    "ItemCost": 413.3,
-    "ItemQuantity": 0,
-    "Accesibility": false
+    ]
   }
 ]

@@ -6,6 +6,7 @@ public class PowerSupplyEntity : HardwareEntity
     private static int nextID = 0;
     private static int classID = 6;
     public int? PowerId { get; set; }
+    public string? PowerName { get; set; }
     public string? PowerStandard {  get; set; }
     public string? PowerValue { get; set; }
     public string? PowerCertificate { get; set; }
@@ -20,7 +21,7 @@ public class PowerSupplyEntity : HardwareEntity
 
     //Constructor
     public PowerSupplyEntity(string itemName, double itemCost, int itemQuantity,
-                             string powerStandard, string powerValue,
+                             string powerName, string powerStandard, string powerValue,
                              string powerCertificate, IEnumerable<string> powerSockets)
     {
         // Initialize base class properties
@@ -33,6 +34,7 @@ public class PowerSupplyEntity : HardwareEntity
 
         // Initialize PowerSupplyEntity specific properties
         PowerId = ++nextID;
+        PowerName = powerName;
         PowerStandard = powerStandard;
         PowerValue = powerValue;
         PowerCertificate = powerCertificate;
