@@ -23,7 +23,7 @@ public class Add
         Console.Write("Name: ");
         string name = Console.ReadLine();
         Console.Write("Chipset: ");
-        string chipset = Console.ReadLine();
+        string chipset = Console.ReadLine().ToUpper();
         Console.Write("Processor Socket(s) (comma-separated): ");
         var processorSockets = Console.ReadLine().Split(',').Select(s => s.Trim().ToUpper()).ToList();
         Console.Write("RAM Socket(s) (comma-separated): ");
@@ -37,7 +37,7 @@ public class Add
         Console.Write("Disk Socket(s) (comma-separated): ");
         var diskSockets = Console.ReadLine().Split(',').Select(s => s.Trim().ToUpper()).ToList();
         Console.Write("Graphics Socket(s) (comma-separated): ");
-        var graphicsSockets = Console.ReadLine().Split(',').Select(s => s.Trim().ToUpper()).ToList();
+        var graphicsSockets = Console.ReadLine().Split(',').Select(s => s.Trim()).ToList();
         Console.Write("Motherboard Standard: ");
         string motherboardStandard = Console.ReadLine().ToUpper();
         Console.Write("Price: ");
@@ -103,8 +103,10 @@ public class Add
         Console.Write("Quantity: ");
         int.TryParse(Console.ReadLine(), out int quantity);
 
-        var newRAM = new RamEntity(name, price, quantity, true, ramEntities.Count + 1, name, type, socket, capacity, frequency, modules);
-
+        var newRAM = new RamEntity(name, price, quantity, true, name, type, socket, capacity, frequency, modules)
+        {
+            RamId = ramEntities.Count + 1
+        };
         ramEntities.Add(newRAM);
         SaveJsonData(ramEntities, "../../../../JSONData/DataRamEntities.json");
         Console.WriteLine("RAM added successfully!");
@@ -190,7 +192,7 @@ public class Add
         Console.Write("Quantity: ");
         int.TryParse(Console.ReadLine(), out int quantity);
 
-        var newPowerSupply = new PowerSupplyEntity(name, price, quantity, standard, wattage, certificate, powerSockets)
+        var newPowerSupply = new PowerSupplyEntity(name, price, quantity, name, standard, wattage, certificate, powerSockets)
         {
             PowerId = powerSupplies.Count + 1
         };

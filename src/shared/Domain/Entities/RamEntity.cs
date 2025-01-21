@@ -22,7 +22,7 @@ public class RamEntity : HardwareEntity
 
     // Constructor
     public RamEntity(string itemName, double itemCost, int itemQuantity, bool accessibility,
-                     int ramID, string ramName, string ramType, string ramSocket,
+                     string ramName, string ramType, string ramSocket,
                      double ramCapacity, double ramFrequency, double modulesNumber)
     {
         // Initialize base class properties
