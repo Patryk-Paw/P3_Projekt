@@ -120,7 +120,7 @@ public class Add
         Console.Write("Capacity (GB): ");
         double.TryParse(Console.ReadLine(), out double capacity);
         Console.Write("Format: ");
-        string format = Console.ReadLine().ToUpper();
+        string format = Console.ReadLine();
         Console.Write("Read Speed (MB/s): ");
         double.TryParse(Console.ReadLine(), out double readSpeed);
         Console.Write("Write Speed (MB/s): ");
@@ -148,7 +148,7 @@ public class Add
         Console.Write("Name: ");
         string name = Console.ReadLine();
         Console.Write("Socket: ");
-        string socket = Console.ReadLine().ToUpper();
+        string socket = Console.ReadLine();
         Console.Write("Core Frequency (MHz): ");
         double.TryParse(Console.ReadLine(), out double coreFrequency);
         Console.Write("Memory Frequency (MHz): ");
@@ -182,7 +182,7 @@ public class Add
         Console.Write("Standard: ");
         string standard = Console.ReadLine().ToUpper();
         Console.Write("Wattage: ");
-        string wattage = Console.ReadLine().ToUpper();
+        string wattage = Console.ReadLine().ToUpper() + "W";
         Console.Write("Certificate: ");
         string certificate = Console.ReadLine().ToUpper();
         Console.Write("Power Socket(s) (comma-separated): ");
