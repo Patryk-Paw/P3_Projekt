@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using Domain.Entities;
 
-public class Add
+public class Add : I_Add
 {
     private void SaveJsonData<T>(List<T> data, string filePath)
     {

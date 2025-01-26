@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 using System.IO;
 using Domain.Entities;
 
-public class Menu
+public class Menu : I_Menu
 {
     private List<PowerSupplyEntity> powerSupplies;
     private List<DiskEntity> diskEntities;

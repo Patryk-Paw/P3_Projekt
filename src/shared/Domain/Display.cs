@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Domain.Entities;
 
-public class Display
+public class Display : I_Display
 {
     public void Motherboards(List<MotherboardEntity> motherboardEntities, ref MotherboardEntity selectedMotherboard, List<object> yourSetup, ref double? totalRamCapacity)
     {
